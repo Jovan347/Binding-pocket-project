@@ -27,7 +27,7 @@ This project implements a simple but complete residue-level prediction workflow:
 ├── binding_pocket_rf_model.py  # Trains and validates the Random Forest model
 ├── generate_submission.py      # Trains on all data and creates submission1.csv
 ├── .gitignore
-└── data/                       # Not committed; expected to contain train/test data
+└── data/                       # Not committed; 
 ```
 
 The `data/` folder is ignored by Git because it contains large dataset files.
@@ -47,24 +47,6 @@ data/
     └── ...
 ```
 
-The training label file `train.csv` is expected to contain at least:
-
-| Column | Description |
-|---|---|
-| `id` | Protein/PDB identifier |
-| `resid` | Space-separated list of binding-pocket residue IDs |
-
-Residue IDs are represented in the format:
-
-```text
-<chain_id>_<residue_number>
-```
-
-For example:
-
-```text
-A_45 B_102 C_18
-```
 
 ## Feature Extraction
 
@@ -252,4 +234,4 @@ Possible future improvements include:
 
 ## License
 
-No license has been specified yet. Add a license file if this repository will be shared publicly or reused by others.
+No license.
